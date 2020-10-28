@@ -1,5 +1,5 @@
 import './App.css';
-import {Cards , Charts , CountryPicker} from "./Components"; 
+import {Cards , Charts , CountryPicker} from "./components/App"; 
 function App() {
   return (
     <div className="App">
