@@ -1,10 +1,13 @@
 import './App.css';
-import {Cards , Charts , CountryPicker} from "./components/App"; 
+import { Cards, Charts, CountryPicker } from "./components/App";
+import styles from "./components/App.module.css"
 function App() {
   return (
     <div className="App">
-    <h1>I am working</h1>
-     </div>
+      <Cards />
+      <Charts />
+      <CountryPicker />
+    </div>
   );
 }
 
