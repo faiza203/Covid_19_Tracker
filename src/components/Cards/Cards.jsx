@@ -1,5 +1,6 @@
 import React from "react";
 import { Card, CardContent, Typography, Grid } from "@material-ui/core";
+import cx from "classnames";
 import CountUp from "react-countup"
 import style from "./Cards.module.css";
 const Cards = ({ data: { confirmed, recovered, deaths, lastUpdate } }) => {
@@ -7,7 +8,7 @@ const Cards = ({ data: { confirmed, recovered, deaths, lastUpdate } }) => {
         return "Loading"
     }
     return <div className="contanier">
-        <Grid container={true} spacing={3} justify="center" className={[style.test , style.test1]}>
+        <Grid container={true} spacing={3} justify="center" className={cx(style.test , style.test1)}>
             <Grid item component={Card}>
                 <CardContent>
                     <Typography color="textSecondary" gutterBottom>Infected</Typography>
