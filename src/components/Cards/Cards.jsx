@@ -1,5 +1,6 @@
 import React from "react";
- const Cards = () => {
-    return <h1>Cards</h1>
+import { Card, CardContent, Typography, Grid } from "@material-ui/core";
+const Cards = (props) => {
+    return <div className="contanier">Cards</div>
 }
 export default Cards;
