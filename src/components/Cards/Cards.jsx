@@ -21,14 +21,14 @@ const Cards = ({ data: { confirmed, recovered, deaths, lastUpdate } }) => {
                     <Typography color="textSecondary" gutterBottom>Recovered</Typography>
                     <Typography variant="h5"><CountUp start={0} end={recovered.value} duration={2.5} separator=","></CountUp></Typography>
                     <Typography color="textSecondary" >{new Date(lastUpdate).toDateString()}</Typography>
-                    <Typography variant="body2">Number of recovered cases of COVID-19</Typography>
+                    <Typography variant="body2">Number of recoveres of COVID-19</Typography>
                 </CardContent></Grid>
             <Grid item component={Card} xs={12} md={3} className={cx(style.card , style.deaths)}>
                 <CardContent>
                     <Typography color="textSecondary" gutterBottom>Deaths</Typography>
                     <Typography variant="h5"><CountUp start={0} end={deaths.value} duration={2.5} separator=","></CountUp></Typography>
                     <Typography color="textSecondary" >{new Date(lastUpdate).toDateString()}</Typography>
-                    <Typography variant="body2">Number of deaths cases of COVID-19</Typography>
+                    <Typography variant="body2">Number of deaths caused of COVID-19</Typography>
                 </CardContent></Grid>
         </Grid></div>
 }
